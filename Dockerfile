@@ -36,7 +36,7 @@ RUN \
     du -cshx /usr/local/rustup /usr/local/cargo/registry /usr/local/cargo/git /influxdb_iox/target
 
 
-FROM debian:bookworm-slim
+FROM debian:12.11-slim
 
 RUN apt update \
     && apt install --yes ca-certificates gettext-base libssl3 --no-install-recommends \
